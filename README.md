@@ -1,7 +1,7 @@
 # Online Order Backend Service
 
-OnlineOrder is the backend service for a food ordering platform similar to Uber Eats or DoorDash.  
-The backend is built with Spring Boot and exposes RESTful APIs to support restaurant browsing, menu management, shopping cart operations, and order processing.
+OnlineOrder is a Spring Boot backend for a food ordering platform similar to Uber Eats or DoorDash.  
+It provides RESTful APIs for restaurant browsing, menu management, shopping cart operations, and order processing.
 
 ---
 
@@ -43,64 +43,11 @@ onlineorder/
 
 ---
 
-## Architecture
-
-The system follows a classic layered backend architecture.
-```
-Client
-→ Controller
-→ Service
-→ Repository
-→ Database
-```
-
-## Layer responsibilities:
-
-Controller
-- Handle HTTP requests
-- Validate input
-- Return JSON responses
-
-Service
-- Core business logic
-- Order processing
-- Cart operations
-- Transaction handling
-
-Repository
-- Database CRUD operations
-- Implemented using Spring Data JPA
-
-Entity
-- Maps Java objects to database tables
-
-DTO / Model
-- Transfer data between frontend and backend
-- Prevent direct exposure of entities
-
----
-
-## Core Features
-
-### Restaurant
-- List restaurants
-- Browse menus
-- Retrieve menu items
-
-### Cart
-- Add item to cart
-- Remove item
-- Update quantity
-- Calculate total price
-
-### Order
-- Checkout cart
-- Create order
-- Persist order items
-
-### Customer
-- Register customer
-- Manage customer profile
+## Features
+- Browse restaurants and menus
+- Add/remove items from cart
+- Checkout and place orders
+- Customer registration
 
 ---
 
@@ -120,23 +67,7 @@ All endpoints return JSON-formatted responses.
 
 ---
 
-## Data Persistence
-
-MySQL (or H2 for local testing) is used as the relational database.
-
-Stores:
-- Customers
-- Restaurants
-- Menu items
-- Cart
-- Orders
-- Order items
-
-Data access is handled via Spring Data JPA repositories.
-
----
-
-## Running the Backend Locally
+## Run Locally
 
 ### Prerequisites
 - Java 17 or above
