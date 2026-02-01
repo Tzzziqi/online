@@ -19,7 +19,7 @@ The backend is built with Spring Boot and exposes RESTful APIs to support restau
 ---
 
 ## Directory Structure
-
+```
 onlineorder/
 │
 ├── src/
@@ -39,7 +39,7 @@ onlineorder/
 │
 ├── build.gradle # Gradle build configuration
 └── docker-compose.yml # Docker deployment
-
+```
 
 ---
 
