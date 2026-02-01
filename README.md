@@ -46,14 +46,15 @@ onlineorder/
 ## Architecture
 
 The system follows a classic layered backend architecture.
-
+```
 Client
 → Controller
 → Service
 → Repository
 → Database
+```
 
-Layer responsibilities:
+## Layer responsibilities:
 
 Controller
 - Handle HTTP requests
