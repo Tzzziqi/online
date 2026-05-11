@@ -18,31 +18,6 @@ It provides RESTful APIs for restaurant browsing, menu management, shopping cart
 
 ---
 
-## Directory Structure
-```
-onlineorder/
-│
-├── src/
-│ ├── main/
-│ │ ├── java/com/laioffer/onlineorder/
-│ │ │
-│ │ ├── controller/ # REST API layer
-│ │ ├── service/ # Business logic layer
-│ │ ├── repository/ # Database access (JPA repositories)
-│ │ ├── entity/ # Database entities
-│ │ ├── model/ # DTOs / request & response objects
-│ │ ├── config/ # Spring configuration
-│ │ ├── OnlineOrderApplication.java # Application entry point
-│ │ └── DevRunner.java # Test data initialization
-│ │
-│ └── test/
-│
-├── build.gradle # Gradle build configuration
-└── docker-compose.yml # Docker deployment
-```
-
----
-
 ## Features
 - Browse restaurants and menus
 - Add/remove items from cart
